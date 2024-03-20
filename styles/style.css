@@ -29,7 +29,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 391px;
+  max-width: 391px;
+  width: 100%;
   list-style-type: circle;
 }
 
@@ -103,7 +104,6 @@
 }
 
 .title-cover {
-  font-weight: 700;
   padding: 165px 0 0 50px;
   line-height: 115%;
 }
@@ -114,18 +114,11 @@
 
 .title-cover_center {
   text-align: center;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 100%;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #fff;
   padding-top: 20px;
 }
 
 .title-cover_right {
   text-align: right;
-  line-height: 100%;
   letter-spacing: 0.6em;
   padding: 20px 50px 0 633px;
 }
@@ -190,7 +183,7 @@
   padding-bottom: 27px;
 }
 
-.card_first {
+.card_type_film {
   position: relative;
   width: 334px;
   min-height: 563px;
@@ -204,7 +197,7 @@
   background-size: cover;
 }
 
-.card_second {
+.card_type_book {
   position: relative;
   width: 334px;
   height: 563px;
@@ -218,7 +211,7 @@
   background-size: cover;
 }
 
-.card_third {
+.card_type_picture {
   position: relative;
   width: 334px;
   height: 563px;
@@ -321,8 +314,8 @@
 }
 
 .about-text:last-of-type {
-  width: 693px;
-  height: 168px;
+  max-width: 693px;
+  width: 100%;
   margin-bottom: 0;
   letter-spacing: 0em;
 }
@@ -384,6 +377,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  list-style: none;
 }
 
 .header_menu-active {
